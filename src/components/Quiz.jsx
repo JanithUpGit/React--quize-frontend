@@ -20,7 +20,7 @@ export default function Quiz() {
         []
     );
 
-    const handleSkipAnswer = useCallback(handleSelectAnswer(null), [handleSelectAnswer]);
+    const handleSkipAnswer = useCallback(()=>handleSelectAnswer(null), [handleSelectAnswer]);
 
     if (quizIsComplete) {
         return <div id="summary">
