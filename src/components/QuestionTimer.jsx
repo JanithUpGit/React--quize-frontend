@@ -23,7 +23,7 @@ export default function QuestionTimer({ timeout, onTimeout }) {
 
         return ()=>{
             clearInterval(interval);
-            setRemainingTime(timeout);
+            
             console.log("clearInterv");
         }
     }, []);
