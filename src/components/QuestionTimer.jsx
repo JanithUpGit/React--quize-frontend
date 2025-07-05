@@ -11,7 +11,7 @@ export default function QuestionTimer({ timeout, onTimeout }) {
             clearTimeout(timer);
             console.log("clearTimeout")
         };
-    }, [timeout, onTimeout])
+    }, [timeout, onTimeout]);
 
 
     useEffect(() => {
@@ -22,9 +22,9 @@ export default function QuestionTimer({ timeout, onTimeout }) {
 
         return ()=>{
             clearInterval(interval);
-            console.log("clearInterval")
+            console.log("clearInterv")
         }
-    }, [timeout])
+    }, []);
 
 
 
